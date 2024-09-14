@@ -1,0 +1,178 @@
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #3498db;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Section Styles */
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #3498db;
+    font-size: 1.8em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Personal Info */
+#personal-info p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Education */
+#education p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Skills */
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+    padding-left: 30px; /* Create space for the custom bullet */
+    position: relative;
+}
+
+#skills li::before {
+    content: '\2022'; /* Unicode character for a bullet point */
+    position: absolute;
+    left: 0;
+    color: #3498db; /* Custom color for the bullet */
+    font-size: 1.2em;
+    top: 0.2em;
+    line-height: 0; /* Keep bullet centered vertically */
+}
+
+
+#skills ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-top: 5px;
+    color: #777;
+}
+
+/* Work Experience */
+#work-experience p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Button */
+#toggle-skills {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#toggle-skills:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    header {
+        margin-bottom: 20px;
+    }
+
+    #profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    #toggle-skills {
+        width: 180px;
+        padding: 8px 16px;
+    }
+}
